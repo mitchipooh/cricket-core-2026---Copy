@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Cricket-Core 2026 | Professional League Scorer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            transition: background-color 0.3s ease, color 0.3s ease;
+            -webkit-tap-highlight-color: transparent;
+        }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #0f172a; 
+            color: #f8fafc; 
+            margin: 0; 
+            overscroll-behavior-y: contain;
+        }
+        
+        /* Momentum Scrolling for mobile */
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            -webkit-overflow-scrolling: touch;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+
+        /* Custom scrollbar for Desktop */
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #475569; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #64748b; }
+
+        /* Light Theme Implementation Overrides */
+        body.light-theme {
+            background-color: #f8fafc;
+            color: #0f172a;
+        }
+        .light-theme .bg-slate-900 { background-color: #f1f5f9 !important; }
+        .light-theme .bg-slate-800 { background-color: #ffffff !important; border-color: #e2e8f0 !important; }
+        .light-theme .bg-slate-950\/80 { background-color: rgba(255, 255, 255, 0.8) !important; }
+        .light-theme .text-white { color: #0f172a !important; }
+        .light-theme .text-slate-400 { color: #64748b !important; }
+        .light-theme .text-slate-300 { color: #334155 !important; }
+        .light-theme .text-slate-200 { color: #1e293b !important; }
+        .light-theme .text-slate-500 { color: #94a3b8 !important; }
+        .light-theme .border-slate-700 { border-color: #e2e8f0 !important; }
+        .light-theme .border-slate-800 { border-color: #f1f5f9 !important; }
+        .light-theme .bg-slate-700 { background-color: #e2e8f0 !important; }
+        .light-theme .bg-slate-950 { background-color: #f8fafc !important; }
+
+        /* Responsive utilities */
+        @media (max-width: 640px) {
+            .mobile-safe-pb { padding-bottom: 120px; }
+            h1 { font-size: 1.5rem !important; }
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
